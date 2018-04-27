@@ -16,4 +16,4 @@ foreach($id in $nuget_ids) {
 
 
 $download_counts | Set-Content downloads.txt
-& python download_graph.py
+& python download_graph.py --version $Version

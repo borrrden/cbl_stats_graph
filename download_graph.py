@@ -1,5 +1,12 @@
 import plotly
 import plotly.graph_objs as go
+import argparse
+
+parser = argparse.ArgumentParser(description='Creates a bar graph given a set of download count inputs (must be ordered correctly)')
+parser.add_argument('--version', type=str, help='The version to show as the title')
+
+args = parser.parse_args()
+version = args.version
 
 with open('downloads.txt') as f:
     content = f.readlines()
