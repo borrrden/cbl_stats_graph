@@ -18,6 +18,6 @@ data = [go.Bar(
             y=content
     )]
 
-layout = go.Layout(title = "Couchbase Lite 2.0.0.1")
+layout = go.Layout(title = "Couchbase Lite {}".format(version))
 
 plotly.offline.plot({"data":data, "layout":layout}, filename='downloads.html', show_link=False, auto_open=False)
