@@ -14,7 +14,7 @@ with open('downloads.txt') as f:
 content = [int(x.strip()) for x in content]
 
 data = [go.Bar(
-            x=['CE Base','EE Base','CE Android','CE iOS','CE Desktop','CE UWP','EE Desktop','EE UWP'],
+            x=['CE Base','EE Base','CE Android','CE iOS','CE Desktop','CE UWP','EE Desktop','EE UWP','EE Android','EE iOS'],
             y=content
     )]
 
