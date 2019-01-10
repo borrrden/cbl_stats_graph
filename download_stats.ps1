@@ -2,9 +2,9 @@ param(
     [Parameter(Mandatory=$true)][string]$Version
 )
 
-$nuget_ids = "Couchbase.Lite","Couchbase.Lite.Enterprise","Couchbase.Lite.Support.Android","Couchbase.Lite.Support.iOS","Couchbase.Lite.Support.NetDesktop","Couchbase.Lite.Support.UWP","Couchbase.Lite.Enterprise.Support.NetDesktop","Couchbase.Lite.Enterprise.Support.UWP"
+$nuget_ids = "Couchbase.Lite","Couchbase.Lite.Enterprise","Couchbase.Lite.Support.Android","Couchbase.Lite.Support.iOS","Couchbase.Lite.Support.NetDesktop","Couchbase.Lite.Support.UWP","Couchbase.Lite.Enterprise.Support.NetDesktop","Couchbase.Lite.Enterprise.Support.UWP","Couchbase.Lite.Enterprise.Support.Android","Couchbase.Lite.Enterprise.Support.iOS"
 
-$download_counts = 0,0,0,0,0,0,0,0
+$download_counts = 0,0,0,0,0,0,0,0,0,0
 
 $index = 0
 foreach($id in $nuget_ids) {
